@@ -15,9 +15,7 @@ for i in range(0,301):
         
     if f(xl)*f(xr)<0: xu=xr
     elif f(xl)*f(xr)>0: xl=xr
-    elif f(xl)*f(xr)==0:
-         xl = xr
-         break
+    elif f(xl)*f(xr)==0: break
            
 if i != 300 : print("Akar persamaannya adalah = ", format(xl, ".5f"))
 elif i == 300: print ("Akar persamaan tidak dapat ditentukan dengan metode bolzano. Coba ubah nilai batas atas atau nilai batas bawah")
